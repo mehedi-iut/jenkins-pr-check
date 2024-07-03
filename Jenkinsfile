@@ -9,17 +9,17 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                // Install npm dependencies
-                sh 'npm install'
-            }
-        }
+        // stage('Install Dependencies') {
+        //     steps {
+        //         // Install npm dependencies
+        //         sh 'npm install'
+        //     }
+        // }
 
         stage('Build') {
             steps {
                 // Run the build process
-                sh 'npm run build'
+                sh 'npm -v'
             }
         }
     }
