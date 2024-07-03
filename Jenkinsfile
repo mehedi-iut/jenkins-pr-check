@@ -19,7 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the build process
-                sh 'npm -v'
+                sh 'echo Hello World'
             }
         }
     }
